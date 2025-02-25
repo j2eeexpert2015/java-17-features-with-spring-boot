@@ -3,12 +3,13 @@ package org.java17faetures.demo.records;
 import java.util.Objects;
 
 public class EmployeeClass {
+    private Long id;
     private String name;
-    private int id;
 
-    public EmployeeClass(String name, int id) {
-        this.name = name;
+    public EmployeeClass( Long id,String name) {
         this.id = id;
+        this.name = name;
+
     }
 
     @Override
@@ -32,11 +33,11 @@ public class EmployeeClass {
         this.name = name;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
